@@ -1,0 +1,255 @@
+
+ @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+.wrapper { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: linear-gradient(to top,#004c4c, #006666) }
+
+
+main
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  height: 480px;
+  overflow: visible;
+  margin: -240px 0 0 -180px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .4);
+  border-radius: 30px;
+  
+}
+
+main > aside
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 142px;
+  left: 0;
+  overflow: hidden;
+  border-radius: 30px 30px 0 0;
+}
+
+main > aside > img
+{
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 338px;
+  border-radius: 30px 30px 0 0;
+}
+
+main > aside > header, main > aside > footer
+{
+  position: absolute;
+  top: -65px;
+  right: 0;
+  left: 0;
+  height: 65px;
+  background: rgba(94, 83, 152, .85);
+  border-radius: 30px 30px 0 0;
+  text-align: center;
+  color: #FFF;
+  font-size: 13px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .8);
+  transition: all .5s;
+   background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+main > aside > header
+{
+  line-height: 65px;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #FFF;
+   background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+main:hover > aside > header { top: 0 }
+
+main > aside > header > a
+{
+  display: inline-block;
+  width: 30px;
+  font-family: "FontAwesome";
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+}
+
+main > aside > header > a[href="#menu"]
+{
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: -15px 0 0;
+  vertical-align: middle;
+  text-align: right;
+  color: rgba(255, 255, 255, .5);
+}
+
+main > aside > header > a[href="#menu"]:after { content: "\f0c9" }
+
+main > aside > header > a[href="#repeat-all"]:after { content: "\f079" }
+main > aside > header > a[href="#shuffle"]:after { content: "\f074" }
+main > aside > header > a[href="#repeat-one"]:after { content: "\f01e" }
+
+main > aside > footer
+{
+  top: auto;
+  bottom: -65px;
+  border-radius: 0;
+}
+
+main:hover > aside > footer { bottom: 0 }
+
+main > aside > footer > strong
+{
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+main > .controls
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 7px 0 0;
+  height: 135px;
+  background: #E5E5E5;
+  border-radius: 0 0 30px 30px;
+}
+
+main > .controls > .volume
+{
+  position: relative;
+  top: -7px;
+  height: 7px;
+  background: #E95F74;
+}
+
+main > .controls > .volume > em
+{
+  display: block;
+  height: 7px;
+  background: #FFF;
+}
+
+main > .controls > .volume > a
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  vertical-align: middle;
+  margin: -11px 0 0 -11px;
+  background: #FFF;
+  border-radius: 100%;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: #5F5493;
+}
+
+main > .controls > .volume > a:after
+{
+  font-family: "FontAwesome";
+  content: "\f027";
+}
+
+main > .controls > a
+{
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  vertical-align: middle;
+  margin: -18px 0 0 -18px;
+  background: #5E5398;
+  border-radius: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-family: "FontAwesome";
+  font-size: 14px;
+  color: #FFF;
+}
+
+main > .controls > a[href="#play"]
+{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: -25px 0 0 -25px;
+  font-size: 18px;
+   background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+main > .controls > a[href="#share"], main > .controls > a[href="#love"]
+{
+  background: #FFF;
+  margin-left: -160px;
+  color: #5E5398;
+}
+main > .controls > a[href="#share"]:after { content: "\f045" }
+
+main > .controls > a[href="#play"]:after { content: "\f04b" }
+main.playing > .controls > a[href="#play"]:after { content: "\f04c" }
+main > .controls > a[href="#prev"] { margin-left: -80px  }
+main > .controls > a[href="#prev"]:after { content: "\f048" }
+main > .controls > a[href="#next"] { margin-left: 44px }
+main > .controls > a[href="#next"]:after { content: "\f051" }
+
+main > .controls > a[href="#love"]
+{
+  margin-left: 124px;
+  color: #E95F74;
+}
+
+main > .controls > a[href="#love"]:after { content: "\f004" }
+
+main > .controls > .progress
+{
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 54px;
+  height: 54px;
+  margin: -31px 0 0 -31px;
+  border: 4px solid #FFF;
+  border-top-color: #D3D5DF;
+  border-right-color: #D3D5DF;
+  transform: rotate(45deg);
+  border-radius: 100%;
+}
+
+#c
+{
+   background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}

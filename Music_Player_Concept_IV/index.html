@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+
+<title> Music Player Concept IV</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<style>
+     
+    </style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+<main>
+<aside>
+<img src="pic1.jpg" />
+<header>
+<a href="#menu"></a>
+<a href="#repeat-all"></a>
+<a href="#shuffle"></a>
+<a href="#repeat-one"></a>
+</header>
+<footer>
+<strong>Tripping the Light Fantastic</strong>
+<label>BT</label>
+</footer>
+</aside>
+<div class="controls">
+<div class="volume">
+<em style="width: 50%"></em>
+<a href="" style="left: 50%"></a>
+</div>
+<a href="#share"></a>
+<a  href="#prev" id ="c"></a>
+<a href="#play"></a>
+<a href="#next" id ="c"></a>
+<a href="#love"></a>
+<span class="progress" ></span>
+</div>
+</main>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+      var Player =
+{
+  volume: function (vol) {if (window.console) return console.log('Set Volume to', vol, '%'), !1;} };
+
+
+$(function ()
+{
+  $('main > .controls > .volume > a').draggable(
+  {
+    axis: 'x',
+    drag: function ()
+    {
+      var p = $(this).position().left / $(this).parent().width();
+
+      Player.volume(p * 100);
+
+      if (p < 0) return $(this).css('left', 0), !1;else
+      if (p > 1) return $(this).css('left', $(this).parent().width()), !1;
+
+      $('main > .controls > .volume > em').css('width', p * 100 + '%');
+    } });
+
+});
+      
+    </script>
+
+</body>
+</html>
